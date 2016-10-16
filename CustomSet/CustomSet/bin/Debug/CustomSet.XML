@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CustomSet</name>
+    </assembly>
+    <members>
+        <member name="T:CustomSet.BinarySearchTree`1">
+            <summary>
+            This class represents a simple binary search tree. It's a rooted binary tree, whose internal nodes 
+            each store a key and each have two distinguished sub-trees, commonly denoted left and right.
+            </summary>
+            <typeparam name="T">Type of tree's node.</typeparam>
+        </member>
+        <member name="P:CustomSet.BinarySearchTree`1.Count">
+            <summary>
+            Number of elements of tree.
+            </summary>
+        </member>
+        <member name="M:CustomSet.BinarySearchTree`1.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:CustomSet.BinarySearchTree`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            This constructor use the given collection for creating a new tree.
+            </summary>
+            <param name="collection">The collection of the values.</param>
+        </member>
+        <member name="M:CustomSet.BinarySearchTree`1.Add(`0)">
+            <summary>
+            This method adds a new node which contains the given value to the tree.
+            </summary>
+            <param name="value">The value of the new node.</param>
+        </member>
+        <member name="M:CustomSet.BinarySearchTree`1.Remove(`0)">
+            <summary>
+            This method deletes node which contains the given value from the tree.
+            </summary>
+            <param name="item">The value of the node which must be deleted.</param>
+            <returns>Returns true, if delete operation is successful.</returns>
+        </member>
+        <member name="M:CustomSet.BinarySearchTree`1.FindByValue(`0)">
+            <summary>
+            This method finds the node which contains the given value.
+            </summary>
+            <param name="value">The value of the sought-for node.</param>
+            <returns>Returns the node which contains the given value.</returns>
+        </member>
+        <member name="M:CustomSet.BinarySearchTree`1.Preorder">
+            <summary>
+            In this traversal method, the root node is visited first, then left subtree and finally right sub-tree.
+            </summary>
+            <returns>Returns elements of the tree in the preorder traversal.</returns>
+        </member>
+        <member name="M:CustomSet.BinarySearchTree`1.Inorder">
+            <summary>
+            In this traversal method, the left left-subtree is visited first, then root and then the 
+            right sub-tree. We should always remember that every node may represent a subtree itself.
+            </summary>
+            <returns>Returns elements of the tree in the inorder traversal.</returns>
+        </member>
+        <member name="M:CustomSet.BinarySearchTree`1.Postorder(CustomSet.BinarySearchTree{`0}.Node)">
+            <summary>
+            In this traversal method, the root node is visited last, hence the name. First we traverse left subtree, 
+            then right subtree and finally root.
+            </summary>
+            <param name="node"></param>
+            <returns>Returns elements of the tree in the postorder traversal.</returns>
+        </member>
+        <member name="P:CustomSet.BinarySearchTree`1.IsReadOnly">
+            <summary>
+            This method returns true if the BST is read-only.
+            </summary>
+        </member>
+        <member name="M:CustomSet.BinarySearchTree`1.Clear">
+            <summary>
+            This method clears the current tree.
+            </summary>
+        </member>
+        <member name="M:CustomSet.BinarySearchTree`1.Contains(`0)">
+            <summary>
+            This method defines does the given element is contains in the tree.
+            </summary>
+            <param name="item">The value of the sought-for node.</param>
+            <returns>Returns true if the tree contains the given element.</returns>
+        </member>
+        <member name="M:CustomSet.BinarySearchTree`1.CopyTo(`0[],System.Int32)">
+            <summary>
+            This method copies tree into an array.
+            </summary>
+            <param name="array">The destination array.</param>
+            <param name="arrayIndex">The start index.</param>
+        </member>
+        <member name="M:CustomSet.BinarySearchTree`1.GetEnumerator">
+            <summary>
+            This method returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>Returns an enumerator that iterates through a collection.</returns>
+        </member>
+        <member name="T:CustomSet.BinarySearchTree`1.Node">
+            <summary>
+            This inner class represents a node of a binary search tree.
+            </summary>
+        </member>
+        <member name="P:CustomSet.BinarySearchTree`1.Node.Left">
+            <summary>
+            A left child of a node.
+            </summary>
+        </member>
+        <member name="P:CustomSet.BinarySearchTree`1.Node.Right">
+            <summary>
+            A right child of a node.
+            </summary>
+        </member>
+        <member name="P:CustomSet.BinarySearchTree`1.Node.Value">
+            <summary>
+            A value which node contains.
+            </summary>
+        </member>
+        <member name="M:CustomSet.BinarySearchTree`1.Node.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:CustomSet.BinarySearchTree`1.Node.#ctor(`0)">
+            <summary>
+            This constructor creates a new node with the given value.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="T:CustomSet.Set`1">
+            <summary>
+            This class represents a custom generic mathematics set with basic set's operations.
+            </summary>
+            <typeparam name="T">Type of elements in the set.</typeparam>
+        </member>
+        <member name="P:CustomSet.Set`1.Count">
+            <summary>
+            Count of elements in set.
+            </summary>
+        </member>
+        <member name="M:CustomSet.Set`1.#ctor">
+            <summary>
+            Default constructor which creates an empty set.
+            </summary>
+        </member>
+        <member name="M:CustomSet.Set`1.#ctor(CustomSet.Set{`0})">
+            <summary>
+            This constructor creates a new set by the given set.
+            </summary>
+            <param name="set">Original set.</param>
+        </member>
+        <member name="M:CustomSet.Set`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            This constructor creates the set which consists of element of the given collection.
+            </summary>
+            <param name="collection">Collection of values.</param>
+        </member>
+        <member name="M:CustomSet.Set`1.Add(`0)">
+            <summary>
+            This method adds a new element to the set.
+            </summary>
+            <param name="insertItem">Element which must be insetred.</param>
+        </member>
+        <member name="M:CustomSet.Set`1.Delete(`0)">
+            <summary>
+            This method deletes the given element from the set if it exists. If element doesn't exist then exception will be thrown.
+            </summary>
+            <param name="deletedItem">Element which must be deleted.</param>
+        </member>
+        <member name="M:CustomSet.Set`1.Intersect(CustomSet.Set{`0})">
+            <summary>
+            This method returns the result of intersection of the current set and another one.
+            </summary>
+            <param name="otherSet">Another set which will be interseted to a current set.</param>
+        </member>
+        <member name="M:CustomSet.Set`1.Intersect(CustomSet.Set{`0},CustomSet.Set{`0})">
+            <summary>
+            This method returns the new set which represents the intersection of two given sets.
+            </summary>
+            <param name="firstSet">The first set.</param>
+            <param name="secondSet">The second set.</param>
+            <returns>Returns the new set which represents the intersection of two given sets.</returns>
+        </member>
+        <member name="M:CustomSet.Set`1.Intersect(CustomSet.Set{`0},CustomSet.Set{`0},CustomSet.Set{`0})">
+            <summary>
+            This method returns the new set which represents the intersection of three given sets.
+            </summary>
+            <param name="firstSet">The first set.</param>
+            <param name="secondSet">The second set.</param>
+            <param name="thirdSet">The third set.</param>
+            <returns>Returns the new set which represents the intersection of three given sets.</returns>
+        </member>
+        <member name="M:CustomSet.Set`1.Intersect(CustomSet.Set{`0}[])">
+            <summary>
+            This method returns the new set which represents the intersection of a few set.
+            </summary>
+            <param name="sets">Array of sets which must be intersected.</param>
+            <returns>Returns the result of the intersection of sets.</returns>
+        </member>
+        <member name="M:CustomSet.Set`1.Difference(CustomSet.Set{`0})">
+            <summary>
+            This method returns the difference of two sets.
+            </summary>
+            <param name="other">The second set for difference.</param>
+            <returns>The result of difference of current set and given another.</returns>
+        </member>
+        <member name="M:CustomSet.Set`1.Difference(CustomSet.Set{`0},CustomSet.Set{`0})">
+            <summary>
+            This method returns the new set which represents the difference between firstSet and secondSet.
+            </summary>
+            <param name="firstSet">First set.</param>
+            <param name="secondSet">Second set.</param>
+            <returns>New set which represents the result of difference.</returns>
+        </member>
+        <member name="M:CustomSet.Set`1.Difference(CustomSet.Set{`0}[])">
+            <summary>
+            This method returns the new set which represents the difference of a few set.
+            </summary>
+            <param name="sets">Array of sets which must be deducted.</param>
+            <returns>Returns the result of the difference of sets.</returns>
+        </member>
+        <member name="M:CustomSet.Set`1.Union(CustomSet.Set{`0})">
+            <summary>
+            This method finds union of two sets.
+            </summary>
+            <param name="other">Another set.</param>
+            <returns>Returns the new set which represents the result of union current and given another set.</returns>
+        </member>
+        <member name="M:CustomSet.Set`1.Union(CustomSet.Set{`0},CustomSet.Set{`0})">
+            <summary>
+            This static method finds union of two sets.
+            </summary>
+            <param name="firstSet">The first set.</param>
+            <param name="secondSet">The second set.</param>
+            <returns>Returns the new set which represents the result of union current and given another set.</returns>
+        </member>
+        <member name="M:CustomSet.Set`1.Union(CustomSet.Set{`0}[])">
+            <summary>
+            This method returns the new set which represents the intersection of a few set.
+            </summary>
+            <param name="sets">Array of sets which must be intersected.</param>
+            <returns>Returns the result of the intersection of sets.</returns>
+        </member>
+        <member name="M:CustomSet.Set`1.SymmetricDifference(CustomSet.Set{`0})">
+            <summary>
+            This method finds symmetric difference between two sets. 
+            </summary>
+            <param name="otherSet">Another set.</param>
+            <returns>Returns a new set which represents the symmetric difference.</returns>
+        </member>
+        <member name="M:CustomSet.Set`1.GetEnumerator">
+            <summary>
+            This method returns enumerator for foreach loop.
+            </summary>
+            <returns>Returns enumerator.</returns>
+        </member>
+        <member name="M:CustomSet.Set`1.ToString">
+            <summary>
+            This method gives a string representation of the set.
+            </summary>
+            <returns>Returns a string representation of the set.</returns>
+        </member>
+        <member name="M:CustomSet.Set`1.Equals(CustomSet.Set{`0})">
+            <summary>
+            This method determines whether the current set equals to the another given set.
+            </summary>
+            <param name="other">An another set for determine equality.</param>
+            <returns>Returns true if two sets contain the same elements.</returns>
+        </member>
+        <member name="F:CustomSet.Set`1.collection">
+            <summary>
+            This List represents collection of elements which the set contains.
+            </summary>
+        </member>
+    </members>
+</doc>

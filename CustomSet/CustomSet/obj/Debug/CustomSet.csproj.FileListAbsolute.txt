@@ -1,0 +1,6 @@
+C:\Users\Ilia\documents\visual studio 2015\Projects\CustomSet\CustomSet\bin\Debug\CustomSet.XML
+C:\Users\Ilia\documents\visual studio 2015\Projects\CustomSet\CustomSet\bin\Debug\CustomSet.dll
+C:\Users\Ilia\documents\visual studio 2015\Projects\CustomSet\CustomSet\bin\Debug\CustomSet.pdb
+C:\Users\Ilia\documents\visual studio 2015\Projects\CustomSet\CustomSet\obj\Debug\CustomSet.csprojResolveAssemblyReference.cache
+C:\Users\Ilia\documents\visual studio 2015\Projects\CustomSet\CustomSet\obj\Debug\CustomSet.dll
+C:\Users\Ilia\documents\visual studio 2015\Projects\CustomSet\CustomSet\obj\Debug\CustomSet.pdb
